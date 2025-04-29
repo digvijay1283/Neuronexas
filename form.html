@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="form-container">
+        <div class="glow"></div>
+        <div class="form-header">
+            <h1>Contact Information</h1>
+            <p>Please fill out the form below with your details</p>
+        </div>
+        
+        <form action="#" method="POST">
+            <div class="form-row">
+                <div class="form-group floating">
+                    <input type="text" id="fullname" name="fullname" placeholder=" " required>
+                    <label for="fullname">Full Name</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group floating">
+                    <input type="tel" id="phone" name="phone" placeholder=" " required>
+                    <label for="phone">Contact Number</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group floating">
+                    <textarea id="address" name="address" placeholder=" " required></textarea>
+                    <label for="address">Address</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group floating">
+                    <input type="text" id="company" name="company" placeholder=" " required>
+                    <label for="company">Company Name</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group floating">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email Address</label>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="" disabled selected>Select your department</option>
+                        <option value="hr">HR</option>
+                        <option value="sales">Sales</option>
+                        <option value="development">Development</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="radio-group">
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="male" required>
+                            <span class="checkmark"></span>
+                            Male
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="female">
+                            <span class="checkmark"></span>
+                            Female
+                        </label>
+                        <label class="radio-option">
+                            <input type="radio" name="gender" value="prefer-not-to-say">
+                            <span class="checkmark"></span>
+                            Prefer not to say
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit Information</button>
+        </form>
+    </div>
+</body>
+</html>
